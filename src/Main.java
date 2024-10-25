@@ -1,8 +1,9 @@
-import java.util.Random;
+
 
 public class Main {
     public static void main(String[] args) {
 
+        /*
         // Generate a random number between 1 and 13
         Random random = new Random();
         int randomNumber = random.nextInt(1,13);
@@ -15,5 +16,10 @@ public class Main {
 
         PrintCard p1= new PrintCard();
         p1.printCard(randomNumber,randomstring);
+        */
+        String[] suitsInputArray = {"club","Diamond","spade","heart"};
+        int[] ranksInputArray = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+        MultipleCards p1 =new MultipleCards();
+        p1.printMultipleCards(ranksInputArray,suitsInputArray);
     }
 }
